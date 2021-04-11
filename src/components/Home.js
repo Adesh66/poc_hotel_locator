@@ -29,6 +29,7 @@ function Home() {
   console.log(hotelName, hotelLocation, hotelDistance, hotelBrand);
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
+    localStorage.setItem("__userSelection__", JSON.stringify(values))
   };
 
   useEffect(() => {
